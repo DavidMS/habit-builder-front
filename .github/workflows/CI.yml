@@ -5,17 +5,13 @@ name: CI
 # Controls when the action will run. Triggers the workflow on push or pull request 
 # events but only for the master branch
 on:
-  push:
-    branches: 
-    - feature/*
   pull_request:
     branches: 
     - master
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  test:
+  install:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -26,27 +22,10 @@ jobs:
     - uses: actions/setup-node@master
       with:
         node-version: '10.x'  
-
     # Runs a single command using the runners shell
-    - name: Tests
-      run: ng test
-  e2e:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@master
-        with:
-          node-version: '10.x'
-          
-      - name: E2E tests
-        run: ng e2e
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@master
-        with:
-          node-version: '10.x'
-          
-      - name: build
-        run: ng build
+    - name: Install
+      run: npm install
+    - name: Install angular cli
+      run: npm install -g @angular/cli
+    - name: build
+      run: ng build
