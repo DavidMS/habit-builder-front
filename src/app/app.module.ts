@@ -13,13 +13,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     TopBarComponent,
-    SideBarComponent
+    SideBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     FlexLayoutModule,
     MatToolbarModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
