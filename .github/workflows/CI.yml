@@ -25,6 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Install
       run: npm install
+    - name: Install angular cli
       run: npm install -g @angular/cli
   build:
     runs-on: ubuntu-latest
