@@ -1,11 +1,11 @@
 .call-to-action-component {
-    margin: 30px;
+    padding: 0px;
 }
 
 .call-to-action-card {
-    margin: 20px;
-    height: 300px;
-    padding: 20px;
+    height: 600px;
+    margin: 50px 30px 30px 30px;
+    padding: 0px;
 }
 
 .call-to-action-content {
@@ -13,12 +13,33 @@
 }
 
 .call-to-action-h1 {
+    margin-top: 15px;
     font-size: xx-large;
     font-weight: bolder;
     color: #3F50B5;
 }
 
+.call-to-action-h2 {
+    margin: 10px;
+    font-weight: normal;
+    color: grey;
+}
+
 .call-to-action-button {
-    margin:5px;
+    margin:20px;
     
+}
+
+.call-to-action-header {
+    text-align: center;
+}
+
+.call-to-action-photo {
+    background-image: url("/assets/images/Jimena.png");
+    background-size: auto;
+    background-position: -225px -30px;
+    height: 350px;
+    width:100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
