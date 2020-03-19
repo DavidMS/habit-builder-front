@@ -1,0 +1,15 @@
+.example-form {
+  min-width: 150px;
+  max-width: 100px;
+  width: 70%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.search-input {
+    text-decoration: none!important;
+    text-transform: lowercase!important;
+    border-bottom: 0px;
+}
